@@ -1,0 +1,398 @@
+{
+  "HEADER": {
+    "TAG": "IC",
+    "APP_VERSION": 65,
+    "COLOR": "#058C00"
+  },
+  "COMPONENTS": [
+    {
+      "ID": 179604796,
+      "TAG": "TOGGLE_BUTTON",
+      "X": 52.47909,
+      "Y": 153.29666,
+      "INPUTS": [],
+      "ARGUMENTS": {
+        "LABEL": "1",
+        "ENABLED": false
+      }
+    },
+    {
+      "ID": 1218317,
+      "TAG": "TOGGLE_BUTTON",
+      "X": 53.62195,
+      "Y": 274.1538,
+      "INPUTS": [],
+      "ARGUMENTS": {
+        "LABEL": "2",
+        "ENABLED": false
+      }
+    },
+    {
+      "ID": 208062732,
+      "TAG": "TOGGLE_BUTTON",
+      "X": 52.764805,
+      "Y": 401.58237,
+      "INPUTS": [],
+      "ARGUMENTS": {
+        "LABEL": "3",
+        "ENABLED": false
+      }
+    },
+    {
+      "ID": 150322276,
+      "TAG": "TOGGLE_BUTTON",
+      "X": 51.42857,
+      "Y": 529.0,
+      "INPUTS": [],
+      "ARGUMENTS": {
+        "LABEL": "4",
+        "ENABLED": false
+      }
+    },
+    {
+      "ID": 265979224,
+      "TAG": "TOGGLE_BUTTON",
+      "X": 53.943237,
+      "Y": 653.0,
+      "INPUTS": [],
+      "ARGUMENTS": {
+        "LABEL": "5",
+        "ENABLED": false
+      }
+    },
+    {
+      "ID": 226297278,
+      "TAG": "LIGHT_BULB",
+      "X": 420.4576,
+      "Y": 247.55334,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 67885732,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ],
+      "ARGUMENTS": {
+        "LABEL": "AND"
+      }
+    },
+    {
+      "ID": 258644263,
+      "TAG": "LIGHT_BULB",
+      "X": 420.64835,
+      "Y": 529.1726,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 4051868,
+          "OTHER_CONNECTOR_ID": 1
+        }
+      ],
+      "ARGUMENTS": {
+        "LABEL": "OR"
+      }
+    },
+    {
+      "ID": 101468157,
+      "TAG": "AND_GATE",
+      "X": 208.19154,
+      "Y": 166.17422,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 179604796,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 1218317,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ]
+    },
+    {
+      "ID": 225513267,
+      "TAG": "OR_GATE",
+      "X": 208.17383,
+      "Y": 260.69562,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 179604796,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 1218317,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ]
+    },
+    {
+      "ID": 201615080,
+      "TAG": "AND_GATE",
+      "X": 208.81685,
+      "Y": 414.80124,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 208062732,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 150322276,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ]
+    },
+    {
+      "ID": 139300575,
+      "TAG": "OR_GATE",
+      "X": 208.56116,
+      "Y": 516.1276,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 208062732,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 150322276,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ]
+    },
+    {
+      "ID": 31434179,
+      "TAG": "BUFFER_GATE",
+      "X": 208.41588,
+      "Y": 652.2332,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 265979224,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ]
+    },
+    {
+      "ID": 67885732,
+      "TAG": "INTEGRATED_CIRCUIT",
+      "X": 314.36908,
+      "Y": 260.7851,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 101468157,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 201615080,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 2,
+          "OTHER_COMPONENT": 31434179,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ],
+      "ARGUMENTS": {
+        "URI": "⚡3-pin-and-or-gate.slij",
+        "NUM_OF_IN": 3,
+        "NUM_OF_OUT": 2
+      }
+    },
+    {
+      "ID": 4051868,
+      "TAG": "INTEGRATED_CIRCUIT",
+      "X": 314.5671,
+      "Y": 516.40875,
+      "INPUTS": [
+        {
+          "CONNECTOR_ID": 0,
+          "OTHER_COMPONENT": 225513267,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 1,
+          "OTHER_COMPONENT": 139300575,
+          "OTHER_CONNECTOR_ID": 0
+        },
+        {
+          "CONNECTOR_ID": 2,
+          "OTHER_COMPONENT": 31434179,
+          "OTHER_CONNECTOR_ID": 0
+        }
+      ],
+      "ARGUMENTS": {
+        "URI": "⚡3-pin-and-or-gate.slij",
+        "NUM_OF_IN": 3,
+        "NUM_OF_OUT": 2
+      }
+    }
+  ],
+  "DEPENDENCIES": {
+    "⚡3-pin-and-or-gate.slij": {
+      "HEADER": {
+        "TAG": "IC",
+        "APP_VERSION": 65,
+        "COLOR": "#148C00"
+      },
+      "COMPONENTS": [
+        {
+          "ID": 179604796,
+          "TAG": "TOGGLE_BUTTON",
+          "X": 52.47909,
+          "Y": 153.29666,
+          "INPUTS": [],
+          "ARGUMENTS": {
+            "LABEL": "1",
+            "ENABLED": false
+          }
+        },
+        {
+          "ID": 1218317,
+          "TAG": "TOGGLE_BUTTON",
+          "X": 53.62195,
+          "Y": 274.1538,
+          "INPUTS": [],
+          "ARGUMENTS": {
+            "LABEL": "2",
+            "ENABLED": false
+          }
+        },
+        {
+          "ID": 208062732,
+          "TAG": "TOGGLE_BUTTON",
+          "X": 52.764805,
+          "Y": 401.58237,
+          "INPUTS": [],
+          "ARGUMENTS": {
+            "LABEL": "3",
+            "ENABLED": false
+          }
+        },
+        {
+          "ID": 226297278,
+          "TAG": "LIGHT_BULB",
+          "X": 468.4421,
+          "Y": 178.72066,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 105130058,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ],
+          "ARGUMENTS": {
+            "LABEL": "AND"
+          }
+        },
+        {
+          "ID": 258644263,
+          "TAG": "LIGHT_BULB",
+          "X": 472.45953,
+          "Y": 272.24295,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 46821384,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ],
+          "ARGUMENTS": {
+            "LABEL": "OR"
+          }
+        },
+        {
+          "ID": 101468157,
+          "TAG": "AND_GATE",
+          "X": 208.19154,
+          "Y": 166.17422,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 179604796,
+              "OTHER_CONNECTOR_ID": 0
+            },
+            {
+              "CONNECTOR_ID": 1,
+              "OTHER_COMPONENT": 1218317,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ]
+        },
+        {
+          "ID": 105130058,
+          "TAG": "AND_GATE",
+          "X": 338.47726,
+          "Y": 179.03137,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 101468157,
+              "OTHER_CONNECTOR_ID": 0
+            },
+            {
+              "CONNECTOR_ID": 1,
+              "OTHER_COMPONENT": 235339150,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ]
+        },
+        {
+          "ID": 225513267,
+          "TAG": "OR_GATE",
+          "X": 208.17383,
+          "Y": 260.69562,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 179604796,
+              "OTHER_CONNECTOR_ID": 0
+            },
+            {
+              "CONNECTOR_ID": 1,
+              "OTHER_COMPONENT": 1218317,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ]
+        },
+        {
+          "ID": 46821384,
+          "TAG": "OR_GATE",
+          "X": 337.88812,
+          "Y": 272.52866,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 225513267,
+              "OTHER_CONNECTOR_ID": 0
+            },
+            {
+              "CONNECTOR_ID": 1,
+              "OTHER_COMPONENT": 235339150,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ]
+        },
+        {
+          "ID": 235339150,
+          "TAG": "BUFFER_GATE",
+          "X": 230.92134,
+          "Y": 402.20386,
+          "INPUTS": [
+            {
+              "CONNECTOR_ID": 0,
+              "OTHER_COMPONENT": 208062732,
+              "OTHER_CONNECTOR_ID": 0
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
